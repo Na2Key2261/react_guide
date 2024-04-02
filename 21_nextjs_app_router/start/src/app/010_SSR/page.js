@@ -14,5 +14,6 @@ export default async function SSR() {
             <ClientComp />
             <ArticleList list={articles} basePath="/010_SSR" />
         </>
+        
     )
 }
