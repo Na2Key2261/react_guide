@@ -1,6 +1,10 @@
-// POINT [SG]フェッチしたデータで静的なページを作成
 import { ENDPOINT } from "@/constants";
 import ArticleList from "../../components/articleList";
+
+export const metadata = {
+  title: 'ページ一覧',
+  description: '記事ページの一覧を表示します。',
+}
 
 export default async function Page() {
   const articles = await fetch(ENDPOINT, { cache: "no-store" }).then((res) =>
