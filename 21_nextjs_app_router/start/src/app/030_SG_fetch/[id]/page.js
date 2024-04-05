@@ -16,6 +16,7 @@ export async function generateStaticParams() {
   return data.map((record) => ({ id: record.id }));
 }
 
+
 export default async function Detail({ params }) {
   const article = await fetch(`${ENDPOINT}/${params.id}`).then((res) =>
     res.json()

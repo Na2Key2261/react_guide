@@ -2,6 +2,7 @@ import { ENDPOINT } from "@/constants";
 import ArticleList from "../../components/articleList";
 
 export const metadata = {
+  
   title: 'ページ一覧',
   description: '記事ページの一覧を表示します。',
 }
