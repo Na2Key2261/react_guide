@@ -9,7 +9,9 @@ export default function Page() {
         {paths.map((path) => {
           const href = `/020_SG/${path.id}`
           return (
-            <li key={path.id}><Link href={href}>{href}</Link></li>
+            <li key={path.id}>
+              <Link href={href}>{href}</Link>
+            </li>
           )
         })}
       </ul>
