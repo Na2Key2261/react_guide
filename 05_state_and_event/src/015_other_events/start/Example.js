@@ -1,5 +1,6 @@
 import "./Example.css";
 
+/* POINT イベントリスナの登録方法 */
 const Example = () => {
   return (
     <div>
@@ -13,19 +14,21 @@ const Example = () => {
           onFocus={() => console.log("onFocus検知")}
         />
       </label>
-      {/* <div>
+      {/* POINT e.target.valueで入力値を取得 */}
+      <div>
         <label>
           入力値を取得：
           <input type="text" onChange={(e) => console.log(e.target.value)} />
         </label>
-      </div> */}
-      {/* <div
+      </div>
+      {/* POINT 複数のイベントを登録 */}
+      <div
         className="hover-event"
         onMouseEnter={() => console.log("カーソルが入ってきました。")}
         onMouseLeave={() => console.log("カーソルが出ていきました。")}
       >
         ホバーしてね！
-      </div> */}
+      </div>
     </div>
   );
 };

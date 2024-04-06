@@ -1,7 +1,5 @@
 import { useState } from "react";
-// POINT プリミティブ型：1, "str", bool, 10n, Symbol(), null, undefined
-// POINT オブジェクト型：{}, []などのプリミティブ型以外
-// POINT オブジェクト型のstateを変更する場合には必ず新しいオブジェクトを作成する！
+
 const Example = () => {
   const personObj = { name: "Tom", age: 18 };
   const [person, setPerson] = useState(personObj);
