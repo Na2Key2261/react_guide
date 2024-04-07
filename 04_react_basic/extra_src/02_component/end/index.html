@@ -12,28 +12,7 @@
     <script type="text/babel">
         const appEl = document.querySelector('#app');
         const root = ReactDOM.createRoot(appEl);
-        
-        // function Example() {
-        //     return <h1>Hello Components</h1>;
-        // }
-
-        // POINT コンポーネントの先頭は大文字とする
-        // POINT JSXが複数行の時は()で括る
-        const Example = () => (
-            <div>
-                <h1>Hello Components</h1>
-            </div>
-        );
-
-        const a = () => {
-            return
-            "戻り値";
-        }
-
-        console.log(a());
-
-        root.render(<Example />);
+        root.render(<h1>こんにちは</h1>);
     </script>
 </body>
-
 </html>
