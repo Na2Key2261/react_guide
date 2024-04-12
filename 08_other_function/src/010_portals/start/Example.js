@@ -2,10 +2,6 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import Modal from "./components/Modal";
 
-/* POINT createPortalの使い方
-第一引数: React の子要素としてレンダー可能なもの （要素、文字列、フラグメント、コンポーネントなど）
-第二引数: レンダー先のDOM要素
-*/
 const ModalPortal = ({ children }) => {
   const target = document.querySelector(".container.end");
   return createPortal(children, target);
