@@ -10,6 +10,11 @@ const Example = () => {
     }, 1000);
   }, [])
   
+  useEffect(() => {
+    document.title = 'counter:' + time;
+    window.localStorage.setItem('time-key-end', time)
+  }, [time]);
+
   return (
     <h3>
       <time>{time}</time>
