@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
 
 const Example = () => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false)
+
+
+  useEffect(() => {
+    checked && window.alert("checked!");
+  }, [checked]);
 
   return (
     <label>
