@@ -1,6 +1,5 @@
 import { useEffect, useState, useLayoutEffect } from "react";
 
-// POINT useLayoutEffectとは？useEffectとの違い
 const Example = () => {
   const [isDisp, setIsDisp] = useState(true);
 
