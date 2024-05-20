@@ -1,7 +1,7 @@
-import { useEffect, useState, useLayoutEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 
 const Example = () => {
-  const [isDisp, setIsDisp] = useState(true);
+  const [ isDisp, setIsDisp ] = useState(true);
 
   return (
     <>
@@ -38,7 +38,7 @@ const Timer = () => {
     // // console.log('updated');
     
     document.title = 'counter:' + time;
-    window.localStorage.setItem('time-key', time);
+    window.localStorage.setItem('time-key-end', time);
 
     return () => {
       // debugger
@@ -47,7 +47,7 @@ const Timer = () => {
   }, [time]);
 
   useLayoutEffect(() => {
-    const _time = parseInt(window.localStorage.getItem('time-key'));
+    const _time = parseInt(window.localStorage.getItem('time-key-end'));
     if(!isNaN(_time)) {
       setTime(_time);
     }
